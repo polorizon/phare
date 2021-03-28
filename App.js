@@ -57,7 +57,7 @@ const App = () => {
       {showRealApp ? (
         <SafeAreaView style={styles.container}>
           <View style={styles.container}>
-          <Image source={Frame8} style={{ width: 450, height: 1050 }} />
+          <Image source={Frame8} style={{ width: 415, height: 1050 }} />
             <Text style={styles.titleStyle}>
               
             </Text>
@@ -106,9 +106,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   introImageStyle: {
-    width: 420,
+    width: 415,
 
-    height: 1000,
+    height: 1050,
     resizeMode: 'stretch',
   },
   introTextStyle: {
@@ -131,20 +131,20 @@ const slides = [
   {
     key: 's1',
     text: '',
-    title: 'Suivez le cap...',
+    title: '',
     image: require('./assets/Frame1.png'),
     backgroundColor: 'transparent',
   },
   {
     key: 's2',
-    title: '...et maintenez le !',
+    title: '',
     text: '',
     image: require('./assets/Frame5.png'),
     backgroundColor: 'transparent',
   },
   {
     key: 's3',
-    title: 'Ressentir de la souffrance est normal. Il faut l’accepter.',
+    title: '',
     text: '',
     image: require('./assets/Frame6.png'),
     backgroundColor: 'transparent',
