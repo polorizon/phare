@@ -1,7 +1,7 @@
 // React Native App Intro Slider using AppIntroSlider
 // https://aboutreact.com/react-native-app-intro-slider/
 // Simple Intro Slider
-
+import Frame8 from './assets/Frame8.png'
 // import React in our code
 import React, {useState} from 'react';
 
@@ -57,15 +57,15 @@ const App = () => {
       {showRealApp ? (
         <SafeAreaView style={styles.container}>
           <View style={styles.container}>
+          <Image source={Frame8} style={{ width: 450, height: 1050 }} />
             <Text style={styles.titleStyle}>
-              React Native App Intro Slider using AppIntroSlider
+              
             </Text>
             <Text style={styles.paragraphStyle}>
-              This will be your screen when you click Skip
-              from any slide or Done button at last
+            
             </Text>
             <Button
-              title="Show Intro Slider again"
+              title=""
               onPress={() => setShowRealApp(false)}
             />
           </View>
@@ -132,21 +132,21 @@ const slides = [
     key: 's1',
     text: '',
     title: 'Suivez le cap...',
-    image: require('./assets/Frame5.png'),
+    image: require('./assets/Frame1.png'),
     backgroundColor: 'transparent',
   },
   {
     key: 's2',
     title: '...et maintenez le !',
     text: '',
-    image: require('./assets/Frame6.png'),
+    image: require('./assets/Frame5.png'),
     backgroundColor: 'transparent',
   },
   {
     key: 's3',
     title: 'Ressentir de la souffrance est normal. Il faut l’accepter.',
     text: '',
-    image: require('./assets/Frame7.png'),
+    image: require('./assets/Frame6.png'),
     backgroundColor: 'transparent',
   },
   {
